@@ -98,34 +98,34 @@ for recipe in [recipe1,recipe2,recipe3, recipe4]:
     
     
 class Movie:
-    def __init__(self, title,director, year,genre, rating, duration):
+    def __init__(self, title, director, year, genre, rating, duration):
         self.title = title
-        self.director =director
+        self.director = director
         self.year = year
-        self.genre =genre
+        self.genre = genre
         self.rating = rating
-        self.duration=duration
+        self.duration = duration
 
     def is_classic(self):
-        return self.year <2000
+        return self.year < 2000
 
     def describe(self):
-        return f'Название:{self.title},Режиссёр:{self.director}, Год: {self.year}, Жанр: {self.genre}, Рейтинг: {self.rating}, Длительность: {self.duration} мин'
+        return f'Название: {self.title}, Режиссёр: {self.director}, Год: {self.year}, Жанр: {self.genre}, Рейтинг: {self.rating}, Длительность: {self.duration} мин'
 
     def duration_hours(self):
-        hours = self.duration// 60
-        minutes = self.duration %60
+        hours = self.duration // 60
+        minutes = self.duration % 60
         return f'{hours} ч {minutes} мин'
 
 
-movie1=Movie('Титаник', 'Джеймс Кэмерон', 1997, 'драма', 9.0, 195)
-movie2 =Movie('Маска', 'Чак Рассел', 1994, 'комедия', 8.5, 101)
-movie3= Movie('Мстители', 'Джосс Уидон', 2012, 'боевик', 8.0, 143)
+movie1 = Movie('Титаник', 'Джеймс Кэмерон', 1997, 'драма', 9.0, 195)
+movie2 = Movie('Маска', 'Чак Рассел', 1994, 'комедия', 8.5, 101)
+movie3 = Movie('Мстители', 'Джосс Уидон', 2012, 'боевик', 8.0, 143)
 
-for movie in [movie1,movie2,movie3]:
+for movie in [movie1, movie2, movie3]:
     print(movie.describe())
     print('Классика:', movie.is_classic())
-    print('Длительность:',movie.duration_hours())
+    print('Длительность:', movie.duration_hours())
     print()
     
     
