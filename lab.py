@@ -129,7 +129,6 @@ for movie in [movie1, movie2, movie3]:
     print()
     
     
-    
 class Planet:
     body_type ='Небесное тело'
 
